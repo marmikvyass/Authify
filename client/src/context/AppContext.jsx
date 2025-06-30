@@ -17,7 +17,7 @@ export const AppContextProvider = (props)=>{
 
     const getAuthStatus = async ()=>{
         try{
-            const {data} = await axios.get('/api/auth/isAuth')
+            const {data} = await axios.get('/api/auth/isAuth', { withCredentials: true })
             if(data.success){
                 setIsLoggedin(true)
                 getUserData()
