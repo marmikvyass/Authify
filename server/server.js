@@ -27,6 +27,9 @@ app.use(cors({
     },
     credentials: true
 }))
+
+app.use(express.json());
+app.use(cookieParser());
 //API endpoints
 app.get('/', (req, res)=>{
     res.send('API WORKING')
