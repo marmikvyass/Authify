@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root {
+--lunar-100: oklab(19.1% 0.007 -0.078);
+--lunar-200: oklab(31.6% 0.011 -0.116);
+--lunar-300: oklab(46.3% 0.019 -0.126);
+--lunar-400: oklab(60.9% 0.022 -0.109);
+--lunar-500: oklab(75.4% 0.017 -0.068);
+}
