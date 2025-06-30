@@ -11,7 +11,7 @@ const app = express()
 const port = process.env.PORT || 3000
 connectDB()
 
-const allowedOrigins = ['http://localhost:5173', 'https://authify-i5bh.onrender.com']
+const allowedOrigins = ['https://authify-i5bh.onrender.com']
 
 app.use(express.json());
 app.use(cookieParser());
@@ -24,4 +24,4 @@ app.use('/api/auth', router)
 app.use('/api/user', userRouter)
 
 
-app.listen(port, ()=>console.log(`server started on PORT : http://localhost:${port}`))
+app.listen(port, ()=>console.log(`server started on PORT : ${port}`))
